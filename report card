@@ -1,0 +1,79 @@
+<!doctype html>
+
+
+</section>
+
+
+<!-- RIGHT: English content -->
+<section class="side en" aria-label="English Report Card">
+<h3 style="margin:0 0 10px;font-size:18px">Report Card</h3>
+
+
+<div class="student-details">
+<div class="field">
+<div class="label">Student Name</div>
+<div class="value">Ahmed Mohamed</div>
+</div>
+<div class="field">
+<div class="label">Class / Section</div>
+<div class="value">Grade 3</div>
+</div>
+<div class="field">
+<div class="label">School</div>
+<div class="value">Al-Noor School</div>
+</div>
+</div>
+
+
+<table role="table" aria-label="English subjects table">
+<thead>
+<tr>
+<th>Subject</th>
+<th>Mark</th>
+<th>Grade</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<!-- 7 subjects rows (same subjects, English names) -->
+<tr><td>Arabic Language</td><td class="center">85</td><td class="center">A-</td><td></td></tr>
+<tr><td>Mathematics</td><td class="center">78</td><td class="center">B+</td><td></td></tr>
+<tr><td>Science</td><td class="center">82</td><td class="center">A-</td><td></td></tr>
+<tr><td>Social Studies</td><td class="center">74</td><td class="center">B</td><td></td></tr>
+<tr><td>English Language</td><td class="center">80</td><td class="center">A-</td><td></td></tr>
+<tr><td>Islamic Studies</td><td class="center">88</td><td class="center">A</td><td></td></tr>
+<tr><td>Art</td><td class="center">90</td><td class="center">A+</td><td></td></tr>
+</tbody>
+</table>
+
+
+</section>
+</div>
+
+
+<footer>
+<div class="muted">Overall Attendance: <strong>94%</strong></div>
+<div class="sign">
+<div>
+<div class="line">Class Teacher</div>
+</div>
+<div>
+<div class="line">Principal</div>
+</div>
+</div>
+</footer>
+
+
+</div>
+
+
+<script>
+// Small helper: change student info dynamically if you want.
+// Example: window.populate({nameEn: 'Ahmed', nameAr: 'أحمد'});
+window.populate = function(data){
+if(data.nameEn) document.querySelector('.en .value').textContent = data.nameEn;
+if(data.nameAr) document.querySelector('.ar .value').textContent = data.nameAr;
+}
+</script>
+</body>
+</html>
